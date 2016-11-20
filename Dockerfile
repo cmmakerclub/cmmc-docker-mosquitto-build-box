@@ -9,6 +9,9 @@ RUN apt-get install -y \
 
 RUN apt-get install cmake-curses-gui  uuid-dev xsltproc docbook-xsl -y
 
+RUN apt-get install libc-ares-dev -y
+RUN apt-get install libwebsockets-dev -y
+
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
